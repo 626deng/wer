@@ -7,7 +7,11 @@ fun <T> T.applyd(block:T.()->Unit):T
 }
 
 
-
+fun <T> T.applyd2(block:T.()->Unit):T
+{
+    block()
+    return this
+}
 
 
 fun main()
